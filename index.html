@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<style>
+    marquee{
+        direction: ltr;
+        width: 100%;
+        height: 10vh;
+        font-size: 25px;
+        font-weight: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .main{
+        border: 1px solid black;
+        border-radius: 10px;
+        width:400px;
+        height:80%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: lightgray;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left: 450px;
+    }
+    .class0{
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        background-color: lightgreen;
+        width: 100%;
+    }
+    .class1{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .c2,.c3,.c4{
+        font-size: 30px;
+    }
+    .c1{
+        font-size: 25px;
+    }
+    .main:hover{
+        color: white;
+        background-color: black;
+    } 
+    .class2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        width: 100%;
+    }
+    .image{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3JbPnSgNKQ6QynfjjMxXqqOdsH6lLtQYnaQ&s");
+        background-position: center;
+        background-size: 100px;
+        border: 1px solid ;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+    .class3{
+        display: flex;
+        flex-direction: column;
+    }
+    .class4{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .d1{
+        background-color: lightslategrey;
+        font-size: 25px;
+        border-radius: 6%;
+        border: 1px solid;
+    }
+    .d2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightslategray;
+        font-size: 25px;
+        border-radius: 6%;
+        border: 1px solid;
+    }
+    .d3{
+        display: flex;
+        font-size: 25px;
+        border-radius: 6%;
+        justify-content: center;
+        align-items: center;
+        background-color: lightslategray;
+        border: 1px solid;
+    }
+    .d4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        border-radius: 6%;
+        font-size: 25px;
+        justify-content: center;
+        background-color: lightslategray;
+        border: 1px solid;
+    }
+    .class5{
+        display: flex;
+        margin-top: 8px;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+    }
+    img{
+        border: 1px solid;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+    }
+    .class6{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .f1,.f2{
+        font-size: 40px;
+    }
+    .class7{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        overflow:scroll;
+        height: 150px;
+    }
+    img[title="ironman"]{
+        width: 150px;
+        border-radius: 0px;
+        height: 150px;
+    }
+    img[title="Thor"]{
+        width:150px;
+        border-radius: 0px;
+        height: 150px;
+    }
+    img[title^="Hulk"]{
+        width: 150px;
+        border-radius: 0px;
+        height: 150px;
+    }
+    img[title$="Captain"]{
+        width: 150px;
+        height: 150px;
+        border-radius: 0px;
+    }
+    img[title*="Doctor"]{
+        width: 150px;
+        height: 150px;
+        border-radius: 0px;
+    }
+    img[title*="Wanda"]{
+        width: 150px;
+        height: 150px;
+        border-radius: 0px;
+    }
+    img[title="Spiderman"]{
+        width: 150px;
+        height: 150px;
+        border-radius: 0px;
+    }
+    img[title="Panther"]{
+        width: 150px;
+        height: 150px;
+        border-radius: 0px;
+    }
+    img[title="Thanos"]{
+        width: 150px;
+        height: 150px;
+        border-radius: 0px;
+    }
+    .class8{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 30px;
+        width: 100%;
+    }
+    .class9{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        background-color: brown;
+        width: 100%;
+    }
+    
+    img[title="kohli"] {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+    }  
+    img[title="rohit"]{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%
+    }
+    .classbio{
+        display: flex;
+    }
+    .c10{
+        display: flex;
+        flex-direction: row;
+    }
+    body{
+        background-color: orange;
+    }
+
+</style>
+</head>
+<body>
+    <div class="md">
+    <marquee>Instagram profile UI using flex box</marquee>
+<div class="main">
+<div class="class0">
+        <div class="c0"><ion-icon name="mic"></ion-icon></div>
+        <div class="c0"><ion-icon name="cellular"></ion-icon></div>
+        <div class="a1"><ion-icon name="chatbox-ellipses"></ion-icon></div>
+        <div class="a1"><ion-icon name="bluetooth"></ion-icon></div>
+        <div class="a1"><ion-icon name="battery-half"></ion-icon></div>
+</div>
+<div class="class1">
+        <span class="c1">srineth_sri<ion-icon class="c2" name="chevron-down-outline"></ion-icon></span>
+        <ion-icon class="c3" name="duplicate-outline"></ion-icon>
+        <ion-icon class="c4"name="reorder-three-outline"></ion-icon>
+</div>
+<div class="class2">
+    <div class="image"></div>
+     <div>&nbsp &nbsp 50<br />posts</div>
+     <div>&nbsp &nbsp 269<br />followers </div>
+     <div>&nbsp &nbsp 380<br />following</div>
+</div>
+<div class="class3">
+    <div>//SRINETH//</div>
+    <div>Mahadev</div>
+    <div>Gym</div>
+    <div>No-excuses</div>
+</div>
+<div class="classbio">
+    <div><img src="https://render.fineartamerica.com/images/rendered/default/greeting-card/images/artworkimages/medium/3/virat-kohli-wallpaper-vinay-sainath.jpg?&targetx=0&targety=-33&imagewidth=500&imageheight=799&modelwidth=500&modelheight=700&backgroundcolor=D7C5AF&orientation=1" title="kohli" /></div>
+    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO0Th3gxZ1FTiWSVOtWQJ6UODdkYAbzSfSvQ&s" title="rohit" /></div>
+    <div class="c10">followed by virat kohli,rohit sharma and 5 others</div>
+    
+</div>
+<div class="class4">
+    <div class="d1">follow</div>
+    <div class="d2">message</div>
+    <div class="d3">Email</div>
+    <div class="d4"><ion-icon name="person-add-outline"></ion-icon></div>
+</div>
+<div class="class5">
+    <div class="e1"><img src="https://www.shutterstock.com/image-photo/neon-avatar-vectorstyle-image-naruto-260nw-2515582615.jpg"/><br />Naruto</div>
+    <div class="e2"><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/df2abcf3-0c0e-4b0d-bced-86c3a3d6bf8e/dg08eso-d59e1506-e048-4bc8-b2ce-6e21f13a6a2c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RmMmFiY2YzLTBjMGUtNGIwZC1iY2VkLTg2YzNhM2Q2YmY4ZVwvZGcwOGVzby1kNTllMTUwNi1lMDQ4LTRiYzgtYjJjZS02ZTIxZjEzYTZhMmMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-V3Eho2OHQyZAS19kGBRvLBz6R3GtlUPS4PLzi_X2pw" /><br/>Itachi</div>
+    <div class="e3"><img src="https://i.pinimg.com/originals/c7/ae/97/c7ae979e31217497a6bf2a4aa471828e.jpg" /><br/>Obito</div>
+    <div class="e4"><img src="https://wallpapers.com/images/featured/sasuke-pictures-xcwwjzrdub9tuuxi.jpg"/><br/>Sasuke</div>
+    <div class="e5"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNyhkN_g7rIkR4JT7Vk-JKjam_ue5Kb_SoMQ&s" /><br />Kakashi</div>
+</div>
+<div class="class6">
+    <div class="f1"><ion-icon name="apps"></ion-icon></div>
+    <div class="f2"><ion-icon name="person-circle"></ion-icon></div>
+</div>
+<div class="class7">
+    <div><img src="https://preview.redd.it/ironman-drawn-by-me-using-colored-pencils-v0-hvhlbmna6vid1.jpeg?auto=webp&s=e509def82b343b29c2427425b61f80f49eaa6711" title="ironman"/></div>
+    <div><img src="https://images3.alphacoders.com/674/thumb-1920-674048.jpg" title="Thor"/></div>
+    <div><img src="https://cdn.magicdecor.in/com/2023/10/26161113/Fury-of-the-Hulk-Wallpaper.jpg" title="Hulk" /></div>
+    <div><img src="https://wallpapers.com/images/featured/captain-america-uymfdo8a063hcbxb.jpg" title="Captain"/></div>
+    <div><img src="https://variety.com/wp-content/uploads/2022/05/Doctor-STrange-2.jpg" title="Doctor" /></div>
+    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmiLse_Ayfa3BSnZ3gHh5j_AIcxG-bjhewww&s" title="Wanda" /></div>
+    <div><img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p29821_p_v13_ai.jpg" title="Spiderman"></div>
+    <div><img src="https://cdn.britannica.com/36/198336-050-A9B8AA86/Chadwick-Boseman-Tchalla-Black-Panther-Black.jpg" title="Panther" /></div>
+    <div><img src="https://media.licdn.com/dms/image/C4D12AQGCQc5_zY-QrQ/article-cover_image-shrink_600_2000/0/1531155657837?e=2147483647&v=beta&t=op-vgpFIZFhg0LIJYYyS2eqkw3xh_A5R4jTc20SQivM" title="Thanos" /></div>
+</div>
+<div class="class8">
+    <div><ion-icon name="home"></ion-icon></div>
+    <div><ion-icon name="search"></ion-icon></div>
+    <div><ion-icon name="images"></ion-icon></div>
+    <div><ion-icon name="bag-add"></ion-icon></div>
+    <div><ion-icon name="person-circle"></ion-icon></div>
+</div>
+<div class="class9">
+    <div><ion-icon name="menu"></ion-icon></div>
+    <div><ion-icon name="home"></ion-icon></div>
+    <div><ion-icon name="chevron-forward"></ion-icon></div>
+</div>
+</div>
+</div>
+</body>
+</html>
